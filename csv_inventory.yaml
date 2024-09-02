@@ -1,6 +1,9 @@
 ---
 #csv_plugin.yaml
 
-plugin: my_csv_plugin            # Name of the plugin
+# ansible plugin name
+plugin: my_csv_plugin # Name of the plugin
+
+# my_csv_plugin plugin options
 path_to_inventory: csv_inventory # Directory location of CSV
-csv_file: myinventory.csv        # Name of the inventory file 
+csv_file: myinventory.csv # Name of the inventory file
