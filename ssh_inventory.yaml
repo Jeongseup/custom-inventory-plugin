@@ -1,0 +1,4 @@
+---
+plugin: ssh_config_plugin
+ssh_config_dir: ~/.ssh/testdir
+# ssh_config_dir: ~/.ssh/config.d

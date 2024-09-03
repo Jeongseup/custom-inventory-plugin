@@ -24,7 +24,7 @@ DOCUMENTATION = r'''
 
 
 from ansible.plugins.inventory import BaseInventoryPlugin
-from ansible.errors import AnsibleError, AnsibleParserError
+from ansible.errors import AnsibleParserError
 import csv
 
 
@@ -45,7 +45,9 @@ class InventoryModule(BaseInventoryPlugin):
             #and is readable by current user
             if path.endswith(('csv_inventory.yaml','csv_inventory.yml')):
                 valid = True
-        return valid
+        # return valid
+        return True
+
     
     def parse(self, inventory, loader, path, cache):
           '''Return dynamic inventory from source '''
